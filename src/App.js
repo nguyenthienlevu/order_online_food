@@ -1,12 +1,14 @@
-import { faAccessibleIcon } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import routes from './config/routes';
+import Container from './Layouts/Container';
+import Footer from './Layouts/Footer';
+import Header from './Layouts/Header';
 function App() {
   return (
     <div className="App">
-      <h1>helo worl</h1>
-      <FontAwesomeIcon icon={faAccessibleIcon}></FontAwesomeIcon>
+      <Header></Header>
+      <Container></Container>
+      <Footer></Footer>
     </div>
   );
 }
