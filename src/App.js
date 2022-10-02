@@ -1,15 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import routes from './config/routes';
-import Container from './Layouts/Container';
-import Footer from './Layouts/Footer';
-import Header from './Layouts/Header';
+import config from '~/config';
+import Container from '~/Layouts/DefaulLayOut/Container';
+import DefaulLayOut from '~/Layouts/DefaulLayOut/DefaulLayOut';
+import Home from '~/pages/Home';
+import ProfileUser from '~/pages/ProfileUser';
+import './App.scss';
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <Container></Container>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="App">
+        <DefaulLayOut>
+          <Container>
+            <Routes>
+              <Route path={config.routes.home} element={<Home />}></Route>
+              <Route
+                path={config.routes.profileUser}
+                element={<ProfileUser />}
+              ></Route>
+            </Routes>
+          </Container>
+        </DefaulLayOut>
+      </div>
+    </Router>
   );
 }
 

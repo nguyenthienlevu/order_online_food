@@ -4,7 +4,7 @@ import ProfileUser from '~/pages/ProfileUser';
 // Public routes
 const publicRoutes = [
   { path: config.routes.home, component: Home },
-  { path: config.routes.profilrUser, component: ProfileUser },
+  { path: config.routes.ProfileUser, component: ProfileUser },
 ];
 
 const privateRoutes = [];

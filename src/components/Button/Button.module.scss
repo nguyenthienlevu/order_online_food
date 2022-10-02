@@ -1,0 +1,54 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding: 9px 16px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+  margin: 0 16px;
+}
+
+// trạng thái
+.shadow {
+  box-shadow: 0px 3px 5px #aaaaaa;
+}
+.small {
+  font-size: 0.75rem;
+}
+.large {
+  font-size: 1.45rem;
+}
+.outline {
+  border: 1px solid #fd841f;
+  background-color: white;
+  color: #fd841f;
+}
+.no-outline {
+  border: none;
+}
+.danger {
+  background-color: crimson;
+  color: whitesmoke;
+}
+.info {
+  background-color: blue;
+  color: whitesmoke;
+}
+.success {
+  background-color: green;
+  color: whitesmoke;
+}
+.text {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.round {
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+}

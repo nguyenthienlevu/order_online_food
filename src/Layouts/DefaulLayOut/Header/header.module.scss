@@ -1,0 +1,36 @@
+.header {
+  background-color: rgba(210, 184, 184, 0.4);
+  height: 60px;
+
+  .inner {
+    width: 1150px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    .logo {
+      .logo-img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .action {
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      .register {
+        // margin-right: 10px;
+      }
+      .logIn {
+      }
+
+      .user-avatar {
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
