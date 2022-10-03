@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(210, 184, 184, 0.4);
+  background-color: rgb(43 43 43 / 50%);
   height: 60px;
 
   .inner {
@@ -11,6 +11,7 @@
     margin: 0 auto;
 
     .logo {
+      cursor: pointer;
       .logo-img {
         width: 50px;
         height: 50px;
@@ -21,6 +22,13 @@
     .user {
       display: flex;
       align-items: center;
+
+      .cart {
+        font-size: 3rem;
+        margin-right: 20px;
+        color: var(--white-color);
+      }
+
       .register {
         // margin-right: 10px;
       }
@@ -30,6 +38,7 @@
       .user-avatar {
         width: 50px;
         border-radius: 50%;
+        cursor: pointer;
       }
     }
   }
