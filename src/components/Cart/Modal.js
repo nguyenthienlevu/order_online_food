@@ -5,15 +5,8 @@ const cx = classNames.bind(styles);
 
 function Modal({ children }) {
   return (
-    <div
-      className={cx('modal')}
-      style={{
-        backgroundImage: `URL(
-          'https://mir-s3-cdn-cf.behance.net/project_modules/fs/496f5a134267301.61d2dceebff92.jpg'
-        )`,
-      }}
-    >
-      helo
+    <div className={cx('modal')} style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>
+      {children}
     </div>
   );
 }

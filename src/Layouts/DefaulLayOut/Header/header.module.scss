@@ -27,6 +27,15 @@
         font-size: 3rem;
         margin-right: 20px;
         color: var(--white-color);
+        user-select: none;
+        position: relative;
+        .cart-item {
+          cursor: pointer;
+        }
+        .menu-cart {
+          position: absolute;
+          right: 0;
+        }
       }
 
       .register {

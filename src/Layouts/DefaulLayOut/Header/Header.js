@@ -5,15 +5,15 @@ import images from '~/assets/images';
 import Button from '~/components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import CartItem from '~/components/MenuCart/CartItem';
+import { useState } from 'react';
 const cx = classNames.bind(styles);
 
 function Header() {
+  const [showMenuCart, setShowMenuCart] = useState(false);
   const curentUser = false;
-  const Navigate = useNavigate();
-  const clickModal = () => {
-    Navigate(config.routes.cart);
+  const clickCart = () => {
+    setShowMenuCart(!showMenuCart);
   };
 
   return (
@@ -33,10 +33,16 @@ function Header() {
           <Button text>Contact</Button>
           <Button text>About US</Button>
         </div>
-        {/* onClick={clickModal} */}
         <div className={cx('user')}>
           <span className={cx('cart')}>
-            <FontAwesomeIcon icon={faCartPlus} onClick={clickModal} />
+            <FontAwesomeIcon
+              icon={faCartPlus}
+              className={cx('cart-item')}
+              onClick={clickCart}
+            />
+            <div className={cx('menu-cart')}>
+              {showMenuCart && <CartItem />}
+            </div>
           </span>
           {curentUser ? (
             <>
@@ -54,8 +60,6 @@ function Header() {
               alt=""
             ></img>
           )}
-
-          <div className={cx('cart')}></div>
         </div>
       </div>
     </div>
