@@ -1,14 +1,14 @@
 .header {
-  background-color: rgb(43 43 43 / 50%);
   height: 60px;
+  background-color: rgb(43 43 43 / 50%);
 
   .inner {
     width: 1150px;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .logo {
       cursor: pointer;
@@ -17,8 +17,7 @@
         height: 50px;
       }
     }
-    .action {
-    }
+
     .user {
       display: flex;
       align-items: center;
@@ -26,15 +25,16 @@
       .cart {
         font-size: 3rem;
         margin-right: 20px;
-        color: var(--white-color);
         user-select: none;
         position: relative;
+        color: var(--white-color);
         .cart-item {
           cursor: pointer;
         }
         .menu-cart {
-          position: absolute;
           right: 0;
+          top: 48px;
+          position: absolute;
         }
       }
 
@@ -46,8 +46,8 @@
 
       .user-avatar {
         width: 50px;
-        border-radius: 50%;
         cursor: pointer;
+        border-radius: 50%;
       }
     }
   }
