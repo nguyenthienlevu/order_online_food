@@ -5,7 +5,7 @@ import images from '~/assets/images';
 import Button from '~/components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
-import CartItem from '~/components/MenuCart/CartItem';
+import Cart from '~/components/MenuCart/Cart';
 import { useState } from 'react';
 const cx = classNames.bind(styles);
 
@@ -40,9 +40,7 @@ function Header() {
               className={cx('cart-item')}
               onClick={clickCart}
             />
-            <div className={cx('menu-cart')}>
-              {showMenuCart && <CartItem />}
-            </div>
+            <div className={cx('menu-cart')}>{showMenuCart && <Cart />}</div>
           </span>
           {curentUser ? (
             <>

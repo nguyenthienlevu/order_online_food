@@ -4,11 +4,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
-import styles from './Cart.module.scss';
+import styles from './CartDetail.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Cart() {
+function CartDetail() {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('cart')}>
@@ -94,4 +94,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartDetail;

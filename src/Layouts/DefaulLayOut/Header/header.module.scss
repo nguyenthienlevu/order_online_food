@@ -1,11 +1,15 @@
 .header {
   height: 60px;
   background-color: rgb(43 43 43 / 50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .inner {
     width: 1150px;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;

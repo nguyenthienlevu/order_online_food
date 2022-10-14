@@ -4,7 +4,7 @@ import DefaulLayOut from '~/Layouts/DefaulLayOut/DefaulLayOut';
 import Home from '~/pages/Home';
 import ProfileUser from '~/pages/ProfileUser';
 import './App.scss';
-import Cart from './components/Cart/Cart';
+import CartDetail from './components/CartDetail';
 function App() {
   return (
     <Router>
@@ -16,7 +16,7 @@ function App() {
               path={config.routes.profileUser}
               element={<ProfileUser />}
             ></Route>
-            <Route path={config.routes.cart} element={<Cart />}></Route>
+            <Route path={config.routes.cart} element={<CartDetail />}></Route>
           </Routes>
         </DefaulLayOut>
       </div>
