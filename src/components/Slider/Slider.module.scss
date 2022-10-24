@@ -1,5 +1,8 @@
 .category {
-  // height: 300px;
+  margin: 40px 20px;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   .card {
     margin: 20px 20px;
     .card-background {
@@ -13,7 +16,7 @@
         .name {
           margin-top: 10px;
           font-size: 1.8rem;
-          font-weight: 600;
+          font-weight: 500;
         }
 
         .country {
@@ -28,11 +31,10 @@
         }
       }
       .img-product {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         position: relative;
-        top: -10px;
-        border-radius: 50%;
+        top: -22px;
       }
     }
   }

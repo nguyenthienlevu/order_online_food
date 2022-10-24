@@ -27,6 +27,7 @@
       align-items: center;
 
       .cart {
+        z-index: 10;
         font-size: 3rem;
         margin-right: 20px;
         user-select: none;
@@ -50,8 +51,9 @@
 
       .user-avatar {
         width: 50px;
-        cursor: pointer;
         border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
       }
     }
   }

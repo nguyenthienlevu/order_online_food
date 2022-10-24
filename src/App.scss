@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Satisfy&display=swap');
 
 :root {
+  // font
   --font-family: sans-serif;
+
+  // color
   --white-color: #fff;
-  --primary-color: #db2828;
+  --black-color: #000;
   --light-color: #818181;
+  --primary-color: #db2828;
 }
 
 * {
@@ -20,7 +24,6 @@ html {
 body {
   font-family: var(--font-family);
   font-size: 1.6rem;
-  text-rendering: optimizespeed;
   color: var(--text-color);
   overflow-y: overlay;
 }
@@ -51,4 +54,23 @@ input,
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(235, 108, 108) !important;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &::after {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &:hover {
+    background-color: var(--black-color);
+    color: var(--white-color) !important;
+  }
 }
