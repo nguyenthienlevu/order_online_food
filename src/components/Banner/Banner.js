@@ -13,8 +13,6 @@ function Banner() {
   return (
     <div className={cx('banner')}>
       <div className={cx('title')}>
-        {/* <h1 className={cx('heading')}>Hungry?</h1>
-        <h3 className={cx('heading-3')}>Wait a minute for delicious</h3> */}
         <RepeatText title="Hungry?" text="Wait a minute for delicious" />
         <p className={cx('text')}>
           best cooks and bets delivery guys all at your sevice hot tasty will

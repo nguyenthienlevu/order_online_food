@@ -6,7 +6,7 @@ import styles from './Slider.module.scss';
 // style swiper
 import 'swiper/scss';
 import 'swiper/scss/navigation';
-import { dataCategory } from './dataCategory';
+import { dataCategory } from '~/constants/dataCategory';
 
 const cx = classNames.bind(styles);
 

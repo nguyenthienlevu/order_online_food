@@ -14,6 +14,21 @@
   margin: 0 16px;
 }
 
+.title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+
+.icon {
+  margin-left: 5px;
+  padding: 4px 6px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  color: initial;
+  background-color: var(--white-color);
+}
+
 // trạng thái
 .shadow {
   box-shadow: 0px 3px 5px #aaaaaa;
@@ -42,6 +57,9 @@
 }
 .success {
   background-color: green;
+  padding: 6px 6px;
+  border-radius: 5px;
+
   color: whitesmoke;
 }
 .text {

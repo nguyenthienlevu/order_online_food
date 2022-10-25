@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 
 function Button({
   to,
+  style,
   href,
   onClick,
   shadow = false,
@@ -15,9 +16,10 @@ function Button({
   outline = false,
   danger = false,
   info = false,
-  success = false,
   round = false,
   text = false,
+  success = false,
+  icon,
   children,
   className,
   ...passProps
@@ -43,14 +45,15 @@ function Button({
     outline,
     danger,
     info,
-    success,
     text,
+    success,
     round,
   });
 
   return (
     <Component className={classes} {...props}>
-      <span>{children}</span>
+      <span className={cx('title')}>{children}</span>
+      {icon && <span className={cx('icon')}>{icon}</span>}
     </Component>
   );
 }
@@ -68,6 +71,7 @@ Button.propTypes = {
   text: PropTypes.bool,
   success: PropTypes.bool,
   round: PropTypes.bool,
+  icon: PropTypes.node,
   children: PropTypes.node.isRequired,
 };
 

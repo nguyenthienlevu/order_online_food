@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './RepeatText.module.scss';
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 
@@ -13,8 +13,8 @@ function RepeatText({ title, text }) {
   );
 }
 RepeatText.PropType = {
-  title: PropType.string,
-  text: PropType.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default RepeatText;
