@@ -1,32 +1,30 @@
 .wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 16px;
   min-width: 80px;
+  font-weight: 700;
+  font-size: 1.6rem;
   padding: 9px 16px;
   border-radius: 4px;
-  font-size: 1.6rem;
-  background-color: transparent;
-  font-weight: 700;
   cursor: pointer;
-  border: 1px solid transparent;
   user-select: none;
-  margin: 0 16px;
-}
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: transparent;
 
-.title {
-  font-weight: 300;
-  font-size: 1.4rem;
-  color: var(--white-color);
-}
-
-.icon {
-  margin-left: 5px;
-  padding: 4px 6px;
-  font-size: 1.3rem;
-  border-radius: 5px;
-  color: initial;
-  background-color: var(--white-color);
+  .title {
+    font-size: 1.8rem;
+    // color: var(--white-color);
+  }
+  .icon {
+    padding: 6px;
+    line-height: 0;
+    margin-left: 5px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--white-color);
+  }
 }
 
 // trạng thái
@@ -40,48 +38,48 @@
   font-size: 1.45rem;
 }
 .outline {
-  border: 1px solid #fd841f;
-  background-color: white;
   color: #fd841f;
+  background-color: white;
+  border: 1px solid #fd841f;
 }
 .no-outline {
   border: none;
 }
 .danger {
-  background-color: crimson;
-  color: whitesmoke;
+  color: var(--primary-color);
+  background-color: rgba(219, 40, 40, 0.3);
 }
 .info {
-  background-color: blue;
   color: whitesmoke;
+  background-color: blue;
 }
 .success {
-  background-color: green;
   padding: 6px 6px;
   border-radius: 5px;
+  background-color: green;
 
   color: whitesmoke;
 }
 .text {
-  color: #fff;
-  font-size: 1.8rem;
+  font-weight: 700;
   position: relative;
+  color: var(--white-color);
 
   &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
     top: 0;
-    display: block;
-    background-color: rgb(0, 0, 0);
     left: 0px;
+    content: '';
+    z-index: -1;
+    width: 100%;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
     transform-origin: bottom;
     transform: scaley(0);
     transition: all 0.2s;
-    z-index: -1;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
   }
 
   &:hover::before {
@@ -95,11 +93,11 @@
 
 @keyframes transX {
   from {
-    opacity: 0;
     width: 0;
+    opacity: 0;
   }
   to {
-    opacity: 1;
     width: 100%;
+    opacity: 1;
   }
 }

@@ -1,17 +1,16 @@
 import axiosClient from './axiosClient';
 
 const productsApi = {
-  getAllProducts: (keyword, pageNumber, category) => {
-    return axiosClient.get(
-      `/api/products?keyword=${keyword}&category=${category}&pageNumber=${pageNumber}`
-    );
+  getAll: (params) => {
+    const url = '/best-foods';
+    return axiosClient.get(url, { params });
   },
   getProduct: (id) => {
-    return axiosClient.get('/api/products/' + id);
+    return axiosClient.get(`/best-foods/${id}`);
   },
-  getTopRatedProducts: () => {
-    return axiosClient.get('/api/products/topRated');
-  },
+  // getTopRatedProducts: () => {
+  //   return axiosClient.get('/api/products/topRated');
+  // },
 };
 
 export default productsApi;

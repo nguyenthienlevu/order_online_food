@@ -1,24 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import config from '~/config';
-import DefaulLayOut from '~/Layouts/DefaulLayOut/DefaulLayOut';
 import Home from '~/pages/Home';
 import ProfileUser from '~/pages/ProfileUser';
+import ProductDetail from './components/ShopFood/CardProduct/ProductDetail/ProductDetail';
 import './App.scss';
-import CartDetail from './components/CartDetail';
 function App() {
   return (
     <Router>
       <div className="App">
-        <DefaulLayOut>
-          <Routes>
-            <Route path={config.routes.home} element={<Home />}></Route>
-            <Route
-              path={config.routes.profileUser}
-              element={<ProfileUser />}
-            ></Route>
-            <Route path={config.routes.cart} element={<CartDetail />}></Route>
-          </Routes>
-        </DefaulLayOut>
+        {/* <DefaulLayOut> */}
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route
+            path={config.routes.profileUser}
+            element={<ProfileUser />}
+          ></Route>
+          <Route path="cart/:id" element={<ProductDetail />}></Route>
+        </Routes>
+        {/* </DefaulLayOut> */}
       </div>
     </Router>
   );

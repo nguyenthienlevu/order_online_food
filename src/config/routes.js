@@ -1,8 +1,8 @@
 const routes = {
   home: '/',
-  profileUser: '/ProfileUser',
+  profileUser: '/profileUser',
   notFound: '*',
-  cart: '/cart',
+  cart: '/cart/:id',
 };
 
 export default routes;

@@ -10,12 +10,15 @@ import images from '~/assets/images';
 import styles from './Home.module.scss';
 import { dataIntroduce } from '~/constants/dataIntroduce';
 import { dataBlog } from '~/constants/dataBlog';
+import CardProduct from '~/components/ShopFood/CardProduct/CardProduct';
+import ShopFood from '~/components/ShopFood';
 const cx = classNames.bind(styles);
 
 function Home() {
   return (
     <div className={cx('wrapper')}>
       <Header />
+      <ShopFood />
       {/* <Banner /> */}
       {/* <Slider /> */}
       {/* <Container /> */}
@@ -48,6 +51,21 @@ function Home() {
           );
         })}
       </div> */}
+      {/* <div className={cx('demo')}>
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+      </div> */}
+      {/* <Footer /> */}
     </div>
   );
 }

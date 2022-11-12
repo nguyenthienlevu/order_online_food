@@ -3,6 +3,7 @@ const images = {
   logo: require('~/assets/images/hieufood2_s.png'),
   // no product
   noProduct: require('~/assets/images/noProduct.png'),
+  noFound: require('~/assets/images/noFound.png'),
 
   // dataCategory
   delivery: require('~/assets/images/Delivery.png'),
@@ -25,6 +26,9 @@ const images = {
   background1: require('~/assets/images/background1.jfif'),
   background2: require('~/assets/images/background2.jfif'),
   background3: require('~/assets/images/background3.jfif'),
+
+  // No image
+  noImage: require('~/assets/images/noImage.jpg'),
 };
 
 export default images;

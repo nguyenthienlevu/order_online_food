@@ -1,0 +1,10 @@
+// ShopFood
+.home-product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .no-found {
+    max-width: 100%;
+  }
+}

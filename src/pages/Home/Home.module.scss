@@ -3,7 +3,8 @@
     // width: 900px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
   }
 }

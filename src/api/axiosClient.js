@@ -6,11 +6,7 @@ const axiosClient = axios.create({
   headers: {
     'content-type': 'application/json',
   },
-  paramsSerializer: (parmas) =>
-    queryString.stringify({
-      ...parmas,
-      api_key: process.env.REACT_APP_API_URL,
-    }),
+  paramsSerializer: (params) => queryString.stringify(params),
 });
 
 axiosClient.interceptors.request.use(async (config) => config);
